@@ -16,7 +16,7 @@ app.get("/", (req, res) => {
 
 app.use("/api/inngest", serve({ client: inngest, functions }));
 
-Sentry.setupExpressErrorHandler(app);
+
 
 const startServer = async () => {
   try {
